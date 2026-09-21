@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Trading Journal</title>
+    <style>
+        :root {
+            --primary: #00E5FF;
+            --bg: #0B0E14;
+            --surface: #151A24;
+            --text-primary: #E6EDF3;
+            --text-secondary: #9DA7B5;
+            --border: #232B3A;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 24px 16px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--surface);
+            padding: 40px 32px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+        .tag {
+            display: inline-block;
+            background: rgba(0, 229, 255, 0.12);
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            border: 1px solid rgba(0, 229, 255, 0.3);
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+        }
+        .last-updated {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #FFFFFF;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            border-left: 3px solid var(--primary);
+            padding-left: 10px;
+        }
+        p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 14px;
+        }
+        ul {
+            color: var(--text-secondary);
+            padding-left: 20px;
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight-box {
+            background-color: rgba(0, 229, 255, 0.05);
+            border: 1px solid rgba(0, 229, 255, 0.2);
+            border-radius: 10px;
+            padding: 16px;
+            margin: 20px 0;
+        }
+        .highlight-box p {
+            color: var(--text-primary);
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+        .contact-card {
+            background-color: #0E121B;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px;
+            margin-top: 14px;
+        }
+        .contact-card p {
+            margin-bottom: 4px;
+            color: var(--text-primary);
+        }
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 32px;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="tag">Offline-First App</span>
+            <h1>Privacy Policy</h1>
+            <div class="last-updated">Effective Date: September 21, 2026</div>
+        </div>
+
+        <div class="highlight-box">
+            <p><strong>Summary:</strong> <strong>Trading Journal</strong> is built as an offline-first mobile application. We <strong>do not collect, sell, or transmit</strong> your trades, financial metrics, account details, or personal data to any external server or third-party entity.</p>
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>This Privacy Policy applies to the <strong>Trading Journal</strong> application (Package: <code>com.hjstudio.tradingjournal.tjrn</code>) developed by HJ Studio ("we", "us", or "our"). This policy outlines our handling practices regarding user data and our dedication to safeguarding your privacy.</p>
+
+        <h2>2. Data Collection and Usage</h2>
+        <p>Our fundamental principle is user privacy and data sovereignty:</p>
+        <ul>
+            <li><strong>Local Storage:</strong> All trading data (including trade entries, lot sizes, instruments, PnL numbers, notes, and emotional/psychology logs) is stored strictly on your local device using an encrypted and sandboxed local SQLite/Room database.</li>
+            <li><strong>No Cloud Account Required:</strong> You do not need to create an account, register, or provide personal credentials (like passwords, phone numbers, or emails) to use the application.</li>
+            <li><strong>No Financial Execution or Brokerage Access:</strong> The app does not connect to brokerage APIs (e.g., MetaTrader, Binance, Zerodha, etc.), does not process bank deposits or withdrawals, and does not execute real monetary transactions.</li>
+        </ul>
+
+        <h2>3. Device Permissions</h2>
+        <p>The application only accesses minimum required device capabilities strictly necessary for core features:</p>
+        <ul>
+            <li><strong>Storage / Media:</strong> If you attach chart screenshots to a trade log, the app accesses local storage solely to load your chosen image into the local record. These screenshots never leave your device.</li>
+            <li><strong>Notifications (Optional):</strong> If scheduled trade reminders or daily journaling alerts are enabled, the app uses standard local Android notifications.</li>
+        </ul>
+
+        <h2>4. Third-Party Services and Analytics</h2>
+        <p>We do not integrate third-party advertising SDKs, cross-app tracking networks, or commercial analytics frameworks that harvest or sell behavioral data.</p>
+
+        <h2>5. Data Retention and Deletion</h2>
+        <p>Because all data resides exclusively on your local device:</p>
+        <ul>
+            <li>You can edit or delete any individual trade, psychology record, or trading account at any time within the app settings.</li>
+            <li>Uninstalling the application or clearing the application's storage data in Android Settings will permanently remove all stored trades and logs from your device.</li>
+        </ul>
+
+        <h2>6. Children's Privacy</h2>
+        <p>Our service is designed for users aged 18 and older who engage in financial education and personal trading analysis. We do not knowingly collect or solicit information from anyone under the age of 18.</p>
+
+        <h2>7. Security</h2>
+        <p>We leverage standard Android sandboxing and platform security mechanisms to prevent unauthorized applications from accessing your local app database. However, users are encouraged to secure their physical devices with screen locks and biometric authentication.</p>
+
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may periodically update our Privacy Policy. Any updates will be reflected on this page with a revised effective date. We recommend checking this page periodically for any changes.</p>
+
+        <h2>9. Contact Us</h2>
+        <p>If you have any questions, feedback, or concerns regarding this Privacy Policy, please feel free to reach out:</p>
+        <div class="contact-card">
+            <p><strong>Developer:</strong> HJ Studio</p>
+            <p><strong>Email:</strong> <a href="mailto:jehasn2@gmail.com">jehasn2@gmail.com</a></p>
+            <p><strong>App:</strong> Trading Journal (com.hjstudio.tradingjournal.tjrn)</p>
+        </div>
+
+        <footer>
+            &copy; 2026 HJ Studio. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
